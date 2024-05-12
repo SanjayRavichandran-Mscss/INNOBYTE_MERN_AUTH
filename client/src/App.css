@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Cedarville+Cursive&family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+}
+h1 {
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h2 {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  overflow: hidden; /* Ensures the text is not visible outside its containing element */
+  border-right: 0.15em; /* Creates the typewriter cursor effect */
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3s steps(40, end) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  } /* Start with no width */
+  to {
+    width: 90%;
+  } /* Gradually increase width to show full text */
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: italic;
+}
+
+h3 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
