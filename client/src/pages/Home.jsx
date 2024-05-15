@@ -29,7 +29,7 @@ export default function Home() {
         Hello learners...!
       </h1>
       <h2 className="text-3xl text-white">Welcome to our Book-Store App</h2>
-      <p className="text-4xl flex justify-left mt-10 pl-3 font-extrabold text-center">
+      <p className="text-4xl text-yellow-500 flex justify-left mt-10 pl-3 font-extrabold text-center">
         There is no friend as loyal as a book
       </p>
       <h3 className="text-2xl text-left mt-16 ml-4">login to Explore...</h3>

@@ -6,24 +6,28 @@ export default function Dashboard() {
   const { user } = useContext(UserContext);
   return (
     <div>
+
+    <>
+
       {!!user && <h2>Hey... {user.name} !</h2>}
       <h1 className="my-10">
         Hii , Your <span className="text-orange-600 font-mono">Dashboard</span>{" "}
       </h1>
 
       <h1 className="text-green-600 text-5xl font-black mt-20 pointer-events-none ">
-        Click to Create Your Book{" "}
+        Click to Create Your Book
       </h1>
 
       <p className="mt-10">
-        {" "}
+       
         <Link
           className="text-white bg-blue-700 p-2 rounded-lg font-extrabold border hover:bg-blue-900 border-black"
-          to="/register"
+          to="https://innobyte-mern-book-store-frontend.vercel.app"
         >
           Book
-        </Link>{" "}
+        </Link>
       </p>
+      </>
     </div>
   );
 }

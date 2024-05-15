@@ -16,9 +16,9 @@ h1 {
 }
 
 h2 {
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
 
   overflow: hidden; /* Ensures the text is not visible outside its containing element */
   border-right: 0.15em; /* Creates the typewriter cursor effect */
